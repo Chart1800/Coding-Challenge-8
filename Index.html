@@ -1,0 +1,45 @@
+<!-- The purpose of this project is to create an event registration form -->
+
+<!-- U94741303-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Event Registration Portal</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <!-- Text input for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <!-- Text input for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <!-- Dropdown selection for event dates -->
+        <label for="eventDate">Event Date:</label>
+        <select id="eventDate" name="eventDate" required>
+            <option value="">Select a date</option>
+            <option value="2024-06-11">June 11, 2024</option>
+            <option value="2024-06-12">June 12, 2024</option>
+            <option value="2024-06-13">June 13, 2024</option>
+        </select>
+        <br>
+        <!-- Meal preference checkboxes -->
+        <label for="mealPreference">Meal Preference:</label>
+        <input type="checkbox" id="vegetarian" name="mealPreference" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+        <input type="checkbox" id="nonVegetarian" name="mealPreference" value="Non-Vegetarian">
+        <label for="nonVegetarian">Non-Vegetarian</label>
+        <input type="checkbox" id="vegan" name="mealPreference" value="Vegan">
+        <label for="vegan">Vegan</label>
+        <br>
+        <!-- Submit button to finalize registration -->
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Display registration details -->
+    <div id="registrationDetails"></div>
+    <script src="script.js"></script>
+</body>
+</html>
